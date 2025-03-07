@@ -11,7 +11,9 @@
 > ```bash
 > docker start ${CONTAINER_ID}
 > docker stop ${CONTAINER_ID}
-> docker restart ${CONTAINER_ID}
+> docker restart ${CONTAINER_ID}> 
+> # Detener todos los containers
+> docker stop $(docker ps -a -q)
 > ```
 >
 > ## Imágenes
