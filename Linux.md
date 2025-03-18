@@ -21,3 +21,28 @@
 >   #   flag -f Indica el número de token que extraemos
 >   cut -d: -f1 /etc/passwd
 > ```
+>
+> ## Grupos
+> ### Gestionar
+> ```bash
+>    # Crear grupo
+>    groupadd <nombre-de-grupo>
+>    # Borrar grupo
+>    groupdel <nombre-de-grupo>
+> ```
+>
+> # SSH
+> ```bash
+>    # Generar clave SSH
+>    ssh-keygen -t ed25519 -C "your_email@example.com"
+> ```
+>
+## FFMPEG - Conversión de Videos
+>
+> ```bash
+>   # Convertir MKV a MP4
+>   ffmpeg -i input.mkv -codec copy output.mp4
+>
+>   # "Quemar" subtítulos en video
+>   ffmpeg -i mymovie.mp4 -vf subtitles=subtitles.srt mysubtitledmovie.mp4
+> ```

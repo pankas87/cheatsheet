@@ -3,8 +3,10 @@
 > ## Contenedores
 > ### Listar, Borrar
 > ```bash
->    docker ps -a
->    docker rm ${CONTAINER_ID}
+> docker ps -a
+> docker rm ${CONTAINER_ID}
+> # Borrar todos
+> docker rm $(docker ps -a -q)
 > ```
 >
 > ### Iniciar, Detener, Reiniciar
